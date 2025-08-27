@@ -1,9 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ClienteController;
+use App\Http\Controllers\ProjetoController;
 use App\Http\Controllers\DemitirFuncionario;
 use App\Http\Controllers\FuncionarioController;
-use Illuminate\Support\Facades\Route;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,4 +31,4 @@ Route::delete('clients/{client}', [ClienteController::class, 'destroy'])->name('
 Route::resource('funcionarios', FuncionarioController::class);
 Route::patch('funcionarios/{funcionario}/demissao', DemitirFuncionario::class)->name('funcionarios.demitir');
 
-Route::resource('projetos', FuncionarioController::class);
+Route::resource('projetos', ProjetoController::class);

@@ -4,11 +4,13 @@
 
         <ul class="font-medium flex">
             <li class="px-4">
-                <a href="{{ route('clients.create') }}">Cadastro de Clientes</a>
+                <a href="{{ route('clients.index') }}">Clientes</a>
             </li>
             <li class="px-4">
-                <a href="{{ route('funcionarios.create') }}">Cadastro de funcionário</a>
+                <a href="{{ route('funcionarios.index') }}"> Funcionário</a>
             </li>
+            <li class="px-4">
+                <a href="{{ route('projetos.index') }}">Projetos</a>
         </ul>
     </div>
 </nav>
