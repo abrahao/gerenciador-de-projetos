@@ -17,9 +17,7 @@ use App\Http\Controllers\FuncionarioController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'index');
 
 Route::get('clients', [ClienteController::class, 'index'])->name('clients.index');
 Route::get('clients/create', [ClienteController::class, 'create'])->name('clients.create');
